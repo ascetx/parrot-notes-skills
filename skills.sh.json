@@ -3,7 +3,7 @@
   "groupings": [
     {
       "title": "ParrotNotes",
-      "description": "Work with your ParrotNotes recordings, transcripts, labels and saved insights.",
+      "description": "Work with your ParrotNotes in-person meeting notes, transcripts, labels and saved insights.",
       "skills": ["parrotnotes"]
     }
   ]

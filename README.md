@@ -6,7 +6,7 @@ Agent Skills for [ParrotNotes](https://parrotnotes.app), an AI note-taker for in
 
 | Skill | What it does |
 |---|---|
-| [`parrotnotes`](skills/parrotnotes) | Find, read, summarise and save insights for your ParrotNotes recordings and written notes |
+| [`parrotnotes`](skills/parrotnotes) | Find, read, summarise and save insights for your ParrotNotes in-person meeting notes and written notes |
 
 ## Install
 

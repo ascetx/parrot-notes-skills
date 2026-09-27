@@ -1,7 +1,7 @@
 ---
 name: parrotnotes
-description: Find, read, summarize, and save insights for the user's ParrotNotes voice recordings and written notes through the ParrotNotes MCP connector. Use when the user mentions ParrotNotes, their recordings, meeting notes, transcripts, or note labels, or asks to summarize, extract action items from, translate, or repurpose something they recorded. Do not use for notes stored in other apps or for general writing that does not involve the user's ParrotNotes data.
-version: 1.0.0
+description: Find, read, summarize, and save insights for the user's ParrotNotes in-person meeting notes and written notes through the ParrotNotes MCP connector. Use when the user mentions ParrotNotes, their meetings, meeting notes, recordings, transcripts, or note labels, or asks to summarize, extract action items from, translate, or repurpose something they recorded. Do not use for notes stored in other apps or for general writing that does not involve the user's ParrotNotes data.
+version: 1.0.1
 author: Ascetx
 license: Proprietary
 compatibility: Requires the ParrotNotes MCP connector at https://mcp.parrotnotes.app/mcp and a ParrotNotes account. Needs network access.
@@ -13,7 +13,7 @@ metadata:
 
 # ParrotNotes
 
-ParrotNotes stores the user's voice recordings with transcripts, their written notes, labels that organize them, and AI insights such as summaries or action items. Every tool acts only on the signed-in user's own data.
+ParrotNotes stores the user's in-person meeting notes with full transcripts, their written notes, labels that organize them, and AI insights such as summaries or action items. Every tool acts only on the signed-in user's own data.
 
 ## Setup
 
@@ -50,7 +50,7 @@ Never guess an ID. Get it from a list or search result first.
 ### Find a note
 
 1. If the user names a topic, person, or phrase, call `search_notes` with the most distinctive words.
-2. If they describe a time instead, such as "my last recording" or "this morning", call `get_recent_notes` and match on `dateTime`. Use `note_type: "audio"` when they say recording or voice note.
+2. If they describe a time instead, such as "my last meeting" or "this morning", call `get_recent_notes` and match on `dateTime`. Use `note_type: "audio"` when they say meeting, recording, or conversation.
 3. If they name a label or tag, call `get_user_labels`, match the name, then call `get_notes_by_label`.
 4. If several notes match, show a short list with title and date and ask which one they mean. If exactly one matches, go ahead.
 5. When `hasMore` is true and the note was not found, page with `offset` before telling the user it does not exist.
